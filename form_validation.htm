@@ -1,0 +1,128 @@
+<html>
+<head>
+<title> form validation</title> 
+<script>
+
+function validation()
+{
+//required,only letters,lenth
+  n=document.getElementById("n").value;
+  if(!(n.match(/^[a-zA-Z]{8,}$/)))//doubt:how numbers allowed if ^ and $ removed(^ means pattern at start,$pattern at end)
+   {
+    if(!(n.match(/^[a-zA-Z]$/)))
+    {
+	alert("enter proper name");
+    
+    }  
+  else if(n.length<8)
+    {
+	alert("name should not exceed 40");  
+    }
+   } 
+//mix of symbols,length,required
+
+ pas=document.getElementById("pas").value;
+  if(!pas.match(/(?=.*[!@#$%^&*])(?=.*[\d])(?=.*[a-z])(?=.*[A-Z])(.{8,})/))  //positive lookahead
+  {
+    
+    if(!(pas.match(/[!@#$%^&*]+/)))
+	{
+	   alert("password should have atleast one special character");
+	}
+	else if(!(pas.match(/\d+/)))
+	{
+	   alert("password should have atleast one number");
+	}
+	else if(pas.length<8)
+	{
+	   alert("password should be atleast length 8");
+    }
+  }
+
+
+//only numbers,length
+ p=document.getElementById("p").value;
+ if(!(p.match(/^[0-9]{10}$/)))
+ {
+ alert("enter proper phone number");
+ }
+//@ and .com
+ em=document.getElementById("e").value;
+ if(!em.match(/[@]+[.]+/))
+ {
+    if(!em.match(/[@]/))
+	alert("mail should have @");
+	else
+	alert("mail should have .");
+ }
+//one must be selected(radio button)
+f=0;
+g=document.getElementsByName("g");
+for(i=0;i<g.length;i++)
+{
+ if(g[i].checked)
+ {
+  f=1;
+ }
+}
+if(f==0)
+alert("enter your gender");
+//index should not be 0
+c1=document.getElementById("c").selectedIndex;
+c2=document.getElementById("c").options;
+if(c2[c1].index==0)
+{
+alert("select your country");
+}
+}
+</script>
+</head>
+<body>
+<form id="fv">
+<table>
+<tr>
+<td>name: <td/>
+<td><input type="text" name="nm" id="n"  required><td/>
+<tr/>
+<tr>
+<td>password<td/>
+<td><input type="password" id="pas" name="pas"><td/>
+<tr/>
+<tr>
+<td>phone no:<td/>
+<td><input type="text" name="ph" id="p"><td/>
+<tr/>
+<tr>
+<td>mail :<td/>
+<td><input type="text" name="m" id="e"><td/>
+<tr/>
+<tr>
+<td>gender:<td>
+<td><input type="radio" name="g">male<input type="radio" name="g">female<input type="radio"  name="g">other<td/>
+<tr/>
+<tr>
+<td>country:<td/>
+<td>
+<select   name="c" id="c">
+   <option value="select">select</option>
+   <option value="india">india</option>
+   <option value="australia">australia</option>
+   <option value="china">china</option>
+   <option value="russia">russia</option>
+   <option value="usa">usa</option>
+</select>
+<td/>
+<tr/>
+<tr>
+<td>who are you?<td/>
+<td>
+   <input type="checkbox" name="stu"  value="student">student
+   <input type="checkbox" name="tchr" value="teacher">teacher
+   <input type="checkbox" name="emp" value="emp">employee
+<td/>
+</tr>
+</table>
+</form>
+<input type="submit"  onclick="validation()"  value="val">   
+</body>
+</html>
