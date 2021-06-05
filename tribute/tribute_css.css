@@ -1,0 +1,40 @@
+h1,h2,h3{
+text-align:center;
+}
+
+
+.main{
+	background-color:#eee;
+	margin:50px;
+}
+
+.start{
+	padding:50px;
+}
+
+.description{
+	border:1px solid #ddd;
+}
+
+.photo{
+	border:1px solid #ddd;
+}
+.photo img{
+	display:block;  
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:50%;
+	height:400px;
+	width:300px;
+}
+
+.photo p{
+	text-align:center;
+	background-color:#ddd;
+}
+
+.photo + p{
+	font-style:bold;
+	font-size:30px;
+}
+
