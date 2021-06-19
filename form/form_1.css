@@ -1,0 +1,51 @@
+body{
+  background-color: lightblue;
+}
+
+
+.main{
+width:80%;
+margin:auto;
+}
+
+.sub_heading{
+  background-color: rgb(200,200,200);
+  width:70%;
+  margin:auto;
+}
+
+.happiness_form{
+  background-color: rgb(200,200,200);
+  width:70%;
+  margin:auto;
+}
+
+
+table{
+  margin:auto;
+}
+
+fieldset{
+  border-radius: 20px;
+}
+
+td{
+  padding: 8px;
+}
+
+.label{
+  text-align: right;
+}
+
+h1{
+  text-align: center;
+}
+
+#sbt{
+ display: block;
+ margin: auto;
+ width:100px;
+ height:40px;
+ font-size: 20px;
+ background-color: blue;
+}

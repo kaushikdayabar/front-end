@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" href="form_1.css"/>
+</head>
+<body>
+<div class="main">
+ <h1 class="first_heading">Good Vibes Form</h1>
+<p>Note: Form is to be completed at least 21 days prior to date</p>
+ <div class="sub_heading">
+
+ <form>
+   <fieldset>
+     <legend>Personal Details</legend>
+ <table class="personal_table">
+ <tr>
+    <td class="label">Name:</td>
+    <td><input type="text" id="nm" placeholder="enter your name"/></td>
+ </tr>
+ <tr>
+    <td class="label">Address:</td>
+    <td><input type="address" id="adr" placeholder="enter your address"/></td>
+ </tr>
+ <tr>
+    <td class="label">Email:</td>
+    <td><input type="email" id="eml" placeholder="enter your email"/></td>
+ </tr>
+ <tr>
+    <td class="label">Phone:</td>
+    <td><input type="number" placeholder="enter your phone number" id="phn"/></td>
+ </tr>
+ <tr>
+    <td class="label">Gender:</td>
+    <td>
+      <table>
+        <tr>
+          <td>
+      <input type="radio" name="gender" value="m"/>Male
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <input type="radio" name="gender" value="f"/>Female
+         </td>
+       </tr>
+       <tr>
+      	<td>
+          <input type="radio" name="gender" value="other"/>Other
+        </td>
+      </tr>
+    </table>
+ <tr>
+ <td class="label">Birthdate</td>
+ <td><input type="date" name="bday"/></td>
+ </tr>
+ </table>
+</fieldset>
+ </form>
+ </div>
+ <div class="happiness_form">
+ <form>
+   <fieldset>
+     <legend>Happiness form</legend>
+ <table>
+ <tr>
+ <td class="label">When did this happen?</td>
+ <td>
+ <select id="place">
+ <option value="h">Home</option>
+ <option value="o">Office</option>
+ <option value="c">Commute</option>
+ </select>
+ </td>
+ </tr>
+ <tr >
+ <td  class="label">What emotions did you experience ?</td>
+ <td>
+ <input type="checkbox" value="e">Excited<br/>
+ <input type="checkbox" value="h">Humbled<br/>
+ <input type="checkbox" value="l">Loved</td>
+ </tr>
+ <tr>
+ <td class="label">Please Describe your positive Experience</td>
+ <td><textarea rows="3" cols="40" id="desc" placeholder="enter your experience" ></textarea></td>
+ </tr>
+</table>
+</fieldset>
+ </form>
+ </div>
+ <input type="submit" id="sbt" value="Submit"/>
+</div>
+</body>
+</html>
