@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="form_2.css"/>
+</head>
+<body>
+  <h3>freeCodeCamp Survey Form</h3>
+  <p>Thank you for taking the time to help us improve the platform </p>
+  <div class="form_bg">
+  <div class="main_form">
+    <form>
+      <label for="nm">Name</label><br/>
+      <input type="text" placeholder="Enter your name" class="input_text" id="nm"/>
+      <br/>
+      <br/>
+      <label for="em">Email</label><br/>
+      <input type="email" placeholder="Enter your email" class="input_text" id="em"/>
+      <br/>
+      <br/>
+      <label for="phn">Phone Number</label><br/>
+      <input type="number" placeholder="Enter your phone number" class="input_text" id="phn"/>
+      <br/>
+      <br/>
+      <label for="role">Which option best describes your current role</label><br/>
+      <select id="role"  class="input_text">
+        <option value="" >Select your current role</option>
+        <option value="s">student</option>
+        <option value="t">teacher</option>
+        <option value="p">professional</option>
+      </select>
+      <br/>
+      <br/>
+      <label for="rcmd">Would you recommend freecodecamp for your friend</label><br/>
+      <label><input type="radio" id="rcmd" name="rcmd">Definitely</label><br/>
+      <label><input type="radio" id="rcmd" name="rcmd">May be </label><br/>
+      <label><input type="radio" id="rcmd" name="rcmd">No</label>
+      <br/>
+      <br/>
+      <label for="imp">What would ypou like to see improved</label><br/>
+      <label><input type="checkbox" id="imp" value="f">front-end</label><br/>
+      <label><input type="checkbox" id="imp" value="b">back-end</label><br/>
+      <label><input type="checkbox" id="imp" value="d">data-visualisation</label><br/>
+      <br/>
+      <br/>
+      <label for="cmt">Enter your comments</label><br/>
+      <textarea class="input_text" rows="10" cols="40"></textarea>
+      <br/>
+      <br/>
+      <input class="input_text" type="submit" id="sbt" value="Submit"/>
+    </form>
+  </div>
+</div>
+</body>
+</html>
